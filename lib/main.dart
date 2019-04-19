@@ -32,7 +32,8 @@ class StarWarsState extends State<StarWarsData> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp( 
+      home: Scaffold(
       appBar: AppBar(
         title: Text("Star Wars Starships"),
         backgroundColor: Colors.deepPurpleAccent,
@@ -87,8 +88,9 @@ class StarWarsState extends State<StarWarsData> {
           );
         },
       ),
-    );
-  }
+    )
+  );
+}
 
   @override
   void initState() {
